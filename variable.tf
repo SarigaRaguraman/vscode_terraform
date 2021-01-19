@@ -20,9 +20,9 @@ variable "vmname" {
     type = "list"
 }
 variable "vmsize" {}
-variable "vm-osdisk" {
-    type = "list"
-}
+variable "vm-osdisk" {}
+    /*type = "list"
+}*/
 variable "publicipname" {}
 
 
