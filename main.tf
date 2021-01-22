@@ -20,11 +20,10 @@ module "childvnet" {
 
 module "vm" {
  source = "./module/vm"
- nicname = "${var.nicname}"
- vmname = "${var.vmname}"
+ vmnicname_value = "${var.vmnicname_value}"
+ vmname_value= "${var.vmname_value}"
  vmsize = "${var.vmsize}"
- vm-osdisk = "${var.vm-osdisk}"
- publicipname = "${var.publicipname}"
+  publicipname = "${var.publicipname}"
  subnet_id = "${module.childvnet.op}"
  rsname = "${module.rsgroup.mod_rg}"
  rslocation = "${module.rsgroup.mod1_rg}"

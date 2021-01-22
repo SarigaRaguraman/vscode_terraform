@@ -1,11 +1,20 @@
-variable "nicname" {}
-variable "vmname" {}
+/*variable "nicname" {
+    type = "list"
+}
+variable "vmname" {
+    type = "list"
+}
 variable "vmsize" {}
-variable "vm-osdisk" {}
+variable "vm-osdisk" {
+    type = "list"
+} */
+variable "vmname_value"{}
+variable "vmnicname_value"{}
 variable "rslocation" {}
 variable "rsname" {}
 variable "subnet_id" {}
 variable "publicipname" {}
-variable "admin_username" {}
-variable "ssh_key"{}
+variable "vmsize"{}
+
+
 

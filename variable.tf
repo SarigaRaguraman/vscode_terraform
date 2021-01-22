@@ -13,16 +13,20 @@ variable "sub-add-space" {
 }
 
 #Vm Variables
-variable "nicname" {
+/*variable "nicname" {
     type = "list"
 }
 variable "vmname" {
     type = "list"
 }
-variable "vmsize" {}
-variable "vm-osdisk" {}
-    /*type = "list"
-}*/
+
+variable "vm-osdisk" {
+    type = "list"
+} */
 variable "publicipname" {}
+variable "vmsize" {}
+variable "vmname_value"{}
+variable "vmnicname_value"{}
+
 
 
